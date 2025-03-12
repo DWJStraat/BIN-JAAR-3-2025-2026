@@ -1,0 +1,33 @@
+1. Knowledge
+a. Give two examples of whole image annotation (that aren’t in the slides already).
+ -
+b. What type of annotation would you use for medical images? Explain why this fits the
+purpose of a medical classifier.
+- Instance Segmentation: you want as detailed data as possible
+c. What would happen if your training-test-evaluation data split were to be 10%-80%-
+10%?
+- There would be very little training data, leading to the model being very
+unreliable and requiring a lot of epochs.
+d. Give a mathematical formula you can use in a python script to normalize RGB values of
+an image between 0 and 1.
+- y = x / 255, where y = the new value, and x = the R, G, or B value in
+hexadecimal
+e. What is the advantage of using grayscale images in classification? Can you think of a
+possible advantage to keep using colored images?
+- faster processing due to less data
+2. Image processing
+a. Normalize the images 11-20 from last week using Rstudio. First, normalize per image
+(use slide 14). Follow this tutorial if you’re stuck.
+b. Then, normalize over all the images (slide 15).
+3. Neural networks.
+Go to this Neural Network Visualization Tool. Use the default parameters, but change the
+training-test split to 80-20 and run the tool.
+a. How many dimensions has the input of this model? What is the test loss value?
+b. Change the number of neurons in the first layer from 4 to 2. Describe what happens to
+the classifier output (the 2D plot). Do the same but now change the number of firstlayer neurons to 6. What is the test loss value? Give one reason why you deploy this
+model in a commercial application.
+c. Go back to the default settings. Choose the spiral dataset and increase the noise to 50.
+Run the model. What is the quality of the classifier now? Now, choose a different set of
+Features (predictor X1/X2), and try to improve the test loss value.
+d. Follow the tutorial here (up to section 4). Try to get the python code running, and use
+the code to calculate the output of the feedforward model to the input of x = [5,3]
